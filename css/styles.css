@@ -1,0 +1,58 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0b8dff;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 2px 5px 9px 5px #0000004f;
+}
+
+#myNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.dynamicSection {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Tahoma';
+}
+
+h5 {
+    font-size: 40px;
+    font-family: 'Tahoma';
+}
+
+p {
+    width: 75%;
+    font-size: 42px;
+    font-family: 'Tahoma';
+}
+
+#myPage {
+    padding-left: 50px;
+}
