@@ -13,7 +13,7 @@ function highlight(sectionId) {
     //observer configurations
     const options = {
 
-        threshold: [0, 1.0]
+        threshold: 0.50
     }
 
     const callback = (entry) => {
@@ -59,6 +59,17 @@ function createNav(title) {
 }
 
 
+const style = {
+    colors: ["aliceblue", "honeydew"],
+    index: 0,
+    getColor: function () {
+        // return color from the list but always return to first 
+        let current = this.colors[this.index];
+        this.index = (this.index + 1) % this.colors.length;
+        return current;
+    }
+};
+
 function createSection(content) {
     /**
      * This constructs a section along with it's children.
@@ -88,6 +99,7 @@ function createSection(content) {
     contentSection.setAttribute('class', 'dynamicSection');
     contentSection.setAttribute('id', content.title);
 
+    contentSection.style.backgroundColor = style.getColor();
     // add all the elements to the section
     contentSection.appendChild(sectionTitle);
     contentSection.appendChild(sectionSubtitle);

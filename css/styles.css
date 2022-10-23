@@ -20,7 +20,8 @@ body {
 #myNav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    column-gap: 65px;
+    justify-content: center;
 }
 
 a:link,
@@ -34,7 +35,10 @@ a:visited {
 .dynamicSection {
     margin-top: 150px;
     margin-bottom: 150px;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    box-shadow: 2px 2px 20px #311b924f;
 }
 
 h1 {
@@ -53,6 +57,4 @@ p {
     font-family: 'Tahoma';
 }
 
-#myPage {
-    padding-left: 50px;
-}
+
