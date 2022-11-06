@@ -22,7 +22,7 @@ This project is submitted to SDA Front end development course.
 
 
 # Overview
-[(Back to top)](#table-of-contents)
+
 This website is dynamicly loaded and is scalable and to display as much content as needed. 
 the content is divided into sections and adheres to the following format:
     {
